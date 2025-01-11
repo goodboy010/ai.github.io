@@ -11,12 +11,12 @@
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
 <meta name="description" content="# 常用语法
-```
+`
 1. 标题
 在句首插入 #表示标题，有六种标题。">
 <meta property="og:title" content="Markdown语法常用">
 <meta property="og:description" content="# 常用语法
-```
+`
 1. 标题
 在句首插入 #表示标题，有六种标题。">
 <meta property="og:type" content="article">
@@ -90,51 +90,68 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
     <div id="content">
 <div class="markdown-body" id="postBody"><h1>常用语法</h1>
-<pre class="notranslate"><code class="notranslate">1. 标题
-在句首插入 #表示标题，有六种标题。也就是最多可以有 6 个 #号表示最小字号的标题
-
-2. 列表
-有序列表 数字加英文的点 如 1. 2. 3.
-无序列表 *+- 这三个任意一种后面文本接空格
-
-3. 引用块
-在引用块的句首加 &gt;
-嵌套引用需要缩进，例如第一层嵌套用 &gt;&gt;
-
-4. 代码块
-使用 ``` 进行代码块引用 可以接对应的代码语言名，例如 JS、CSS 等，Markdown 会自行使用对应的背景渲染。
-行内引用 可以用两个 `` 进行包裹
-代码（Code）: `代码code`
-
-5. 链接
-超链接 [A](网址 "optional title")
-链接（Link）：[title](https://www.example.com)
-
-图片链接 ![A](网址/地址 可选标题) 地址也可以用本地路径，可以在 markdown 文件夹建一个 picture 文件夹，可选的标题在鼠标悬停图片上会显示，可不写。
-图片链接（Image）：！[title](https://www.example.com)
-
-6. 强调
-在字两边加一个 * 为斜体
-在字两边加两个 ** 为粗体
-在字两边加三个 *** 为 粗斜体 记得不要有与字之间有空格
-
-7. 分割线
-连续三个或以上星号或下划线或减号 都可以生成一个分割线
----
-***
-___
-
-8. 反斜杠
-Markdown 支持将大部分符号前面加上反斜杠来帮助插入普通的符号
-
-9. 居中居右居左
-居中&lt;center&gt;文本&lt;/center&gt;
-居右&lt;p align="right"&gt;文本&lt;/p&gt;
-居左&lt;p align="left"&gt;文本&lt;/p&gt;
-
-10. 换行
-&lt;/br&gt; 或两个或以上空格
-</code></pre>
+<p>`</p>
+<ol>
+<li>
+<p>标题<br>
+在句首插入 #表示标题，有六种标题。也就是最多可以有 6 个 #号表示最小字号的标题</p>
+</li>
+<li>
+<p>列表<br>
+有序列表 数字加英文的点 如 1. 2. 3.<br>
+无序列表 *+- 这三个任意一种后面文本接空格</p>
+</li>
+<li>
+<p>引用块<br>
+在引用块的句首加 &gt;<br>
+嵌套引用需要缩进，例如第一层嵌套用 &gt;&gt;</p>
+</li>
+<li>
+<p>代码块<br>
+使用 ``` 进行代码块引用 可以接对应的代码语言名，例如 JS、CSS 等，Markdown 会自行使用对应的背景渲染。<br>
+行内引用 可以用两个 `` 进行包裹<br>
+代码（Code）: <code class="notranslate">代码code</code></p>
+</li>
+<li>
+<p>链接<br>
+超链接 <a href="%E7%BD%91%E5%9D%80" title="optional title">A</a><br>
+链接（Link）：<a href="https://www.example.com" rel="nofollow">title</a></p>
+</li>
+</ol>
+<p>图片链接 ![A](网址/地址 可选标题) 地址也可以用本地路径，可以在 markdown 文件夹建一个 picture 文件夹，可选的标题在鼠标悬停图片上会显示，可不写。<br>
+图片链接（Image）：！<a href="https://www.example.com" rel="nofollow">title</a></p>
+<ol start="6">
+<li>
+<p>强调<br>
+在字两边加一个 * 为斜体<br>
+在字两边加两个 ** 为粗体<br>
+在字两边加三个 *** 为 粗斜体 记得不要有与字之间有空格</p>
+</li>
+<li>
+<p>分割线<br>
+连续三个或以上星号或下划线或减号 都可以生成一个分割线</p>
+</li>
+</ol>
+<hr>
+<hr>
+<hr>
+<ol start="8">
+<li>
+<p>反斜杠<br>
+Markdown 支持将大部分符号前面加上反斜杠来帮助插入普通的符号</p>
+</li>
+<li>
+<p>居中居右居左<br>
+居中</p>文本<br>
+居右<p align="right">文本</p><br>
+居左<p align="left">文本</p><p></p>
+</li>
+<li>
+<p>换行<br>
+<br> 或两个或以上空格<br>
+`</p>
+</li>
+</ol>
 <h1>进阶语法</h1>
 <pre class="notranslate"><code class="notranslate">1. 表格
 使用 | 分隔不同的单元格，使用 - 分隔表头与其它行
